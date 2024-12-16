@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Video Player</title>
+    <style>
+        /* Body styling for center alignment and background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #b177b1, #2575fc); /* Gradient background */
+        }
+
+        /* Video container styling */
+        .video-container {
+            width: 80%; /* Makes it responsive */
+            max-width: 800px; /* Sets a maximum width */
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Ensures the rounded corners work properly */
+            background-color: #fff; /* White background */
+        }
+
+        /* Video player styling */
+        video {
+            width: 100%; /* Full width of the container */
+            height: auto; /* Maintains aspect ratio */
+            outline: none; /* Removes outline */
+        }
+
+        /* Video title styling */
+        .video-title {
+            padding: 10px 15px;
+            background-color: #9c6f95; /* Complementary blue color */
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Play button hover effect */
+        video:hover {
+            transform: scale(1.02); /* Slight zoom effect */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <!-- Video container -->
+    <div class="video-container">
+        <!-- Video title -->
+        <div class="video-title">Video CV</div>
+        <!-- Video player -->
+        <video controls>
+            <source src="assets/Prerana_Madhavi_video_CV.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
